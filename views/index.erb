@@ -1,0 +1,51 @@
+<html>
+
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="intro" align="center">
+      <h1>Battle!</h1>
+      <form action="/names" method="POST">
+        <label for="player_1">
+          Player 1: 
+          <input type="text" name="player_1"><p>
+        </label>
+        <label for="player_2">
+          Player 2:
+          <input type="text" name="player_2"><p>
+        </label>
+        <input class="start-btn" type="submit" name="Submit" value="START GAME">
+      </form>
+    </div>
+  </body>
+
+
+  <style>
+  body {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2em;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  }
+  .start-btn {
+    text-align: center;
+	  display: inline-block;
+	  margin:5px;
+    font-weight: bold;
+    padding: 10px 10px 10px 10px ;
+    background-color: lightgray;
+    text-shadow: -1px -1px black, 1px 1px white;
+    color: gray;
+    -webkit-border-radius: 7px;
+	  -moz-border-radius: 7px;
+	  -o-border-radius: 7px;
+	  border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+  }
+  </style>
+
+</html>

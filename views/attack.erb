@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <%= @player_1_name%> attacked <%= @player_2_name%>
+  </body>
+
+  <style>
+    body {
+      font-family: 'Permanent Marker', cursive;
+      font-size: 3.5em;
+      text-align: center;
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    }
+    .player_div {
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    width: 10em;
+    margin: auto;
+    border-radius: 20px;
+    }
+
+    .container {
+      background-color: #87CEFA;
+      width: 15em;
+      height: 11.3em;
+      margin: auto;
+      align: center;
+      border-radius: 30px;
+      padding-bottom: 25px;
+    }
+
+    .block {
+      display: block;
+      width: 100%;
+      border: none;
+      background-color: purple;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      padding: 14px 28px;
+      font-size: 35px;
+      cursor: pointer;
+      text-align: center;
+      font-family: 'Permanent Marker', cursive;
+    }
+  </style>
+</html>
