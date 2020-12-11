@@ -7,20 +7,19 @@
   <body>
     <% @player_1_hitpoints = 100%>
     <% @player_2_hitpoints = 100%>
-    
     <div class="container">
         Let battle commence!<br>
       <div class="player_div">
-        <%= @player_1_name%> <br>
-        <%= @player_1_hitpoints%>hp<br>
+        <%= @player_1.name %> <br>
+        <%= @player_1.hitpoints%>hp<br>
         <form method="post" action="/attack">
           <input class="block" type="submit" name="Submit" value="Attack Player 1 🏹">
         </form>
       </div>
       vs
       <div class="player_div">
-        <%= @player_2_name%><br>
-        <%= @player_2_hitpoints%>hp<br>
+        <%= @player_2.name%><br>
+        <%= @player_2.hitpoints%>hp<br>
         <form method="post" action="/attack">
           <input class="block" type="submit" name="Submit" value="Attack Player 2 🏹">
         </form>
